@@ -9,12 +9,14 @@
     </img> 
 </p>
 
-## Instalação Babel 
+## <sup>Babel Instalação</sup>
 
-```npm install --save-dev @babel/core @babel/cli```
+```
+npm install --save-dev @babel/core @babel/cli
+```
 
 
-## Setup Babel
+## <sup>Setup</sup>
 
 ```
   "scripts": {
@@ -24,11 +26,13 @@
 
 Lembrar de criar uma ```./src``` para a ```npm run build``` funcionar.
 
-## Instalação Preset 
+## <sup>Preset Instalação</sup>
 
-```npm install --save-dev @babel/preset-env```
+```
+npm install --save-dev @babel/preset-env
+```
 
-## Configuração Preset
+## <sup>Setup</sup>
 
 Criar novo arquivo _babel.config.js_ na raiz.
 
@@ -50,14 +54,18 @@ Adicionar configuração de ```browserslist``` antes de ```dependencies``` em __
   }
 ```
 
-## Testing
+## <sup>Build</sup>
 
-<sup>crie um arquivo js em ./src e adicione um console.log("teste") para validação.<sup>
+<sup>crie um arquivo js em ```./src``` e adicione ```console.log("teste")``` para validação.<sup>
 
 
-```npm run build```
+```
+npm run build
+```
 
-```node .\dist\teste.js```
+```
+node .\dist\teste.js
+```
 
 
 
