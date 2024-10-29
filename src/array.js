@@ -64,9 +64,18 @@ const existeAlgumAlunoFullStack = turma.some(function(item) {
 
 console.log(existeAlgumAlunoFullStack);
 
+function filtraAlunosDeBackend(aluno) {
+    return aluno.curso === 'Backend';
+}
+
+// filter + função
+const alunosDeBackend = turma.filter(filtraAlunosDeBackend);
+
 // filter
-const alunosDeBackend = turma.filter(function(item) {
-    return item.curso === 'Backend'; // filtra e retorna apenas entradas onde o valor é verdadeiro
-})
+// const alunosDeBackend = turma.filter(function(item) {
+//     return item.curso === 'Backend'; 
+//     // filtra e retorna apenas entradas onde o valor é verdadeiro
+// })
+
 
 console.log(alunosDeBackend);
