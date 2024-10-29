@@ -2,12 +2,12 @@
 
 ## Configuração
 
-Instalação Babel 
+#### Instalação Babel 
 
 ```npm install --save-dev @babel/core @babel/cli```
 
 
-Setup Babel
+#### Setup Babel
 
 ```
   "scripts": {
@@ -16,9 +16,11 @@ Setup Babel
 ```
 > Lembrar de criar uma ./src para a ```build``` funcionar
 
-Instalação Preset 
+#### Instalação Preset 
 
 ```npm install --save-dev @babel/preset-env```
+
+#### Configuração Preset
 
 Criar novo arquivo _babel.config.js_ na raiz.
 
@@ -40,7 +42,7 @@ __package.json__: adicionar configuração de ```browserslist``` antes de ```dep
   }
 ```
 
-Testing
+#### Testing
 
 <sup>crie um arquivo js em src<sup>
 
