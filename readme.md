@@ -1,6 +1,6 @@
 <h1 align="center">ES6 + Babel</h1>
 
-<p align=right>
+<p align=center>
   <a href="https://github.com/senagab/es6">
     <img src="https://img.shields.io/badge/javascript-es6-8A2BE2" alt="ES6">
     </img> 
