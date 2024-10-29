@@ -77,5 +77,16 @@ const alunosDeBackend = turma.filter(filtraAlunosDeBackend);
 //     // filtra e retorna apenas entradas onde o valor é verdadeiro
 // })
 
-
 console.log(alunosDeBackend);
+
+
+// reduce
+const nums = [10, 20, 30, 10];
+
+const soma = nums.reduce(function(acumulador, itemAtual){
+    acumulador += itemAtual;
+    return acumulador;
+}, 0) // acumulador vai ter o valor inicial de zero
+
+
+console.log(soma);
