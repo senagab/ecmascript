@@ -49,3 +49,10 @@ const todosAlunosSaoDeFront = turma.every(function(item) {
 })
 
 console.log(todosAlunosSaoDeFront);
+
+// some
+const existeAlgumAlunoDeBackend = turma.some(function(item) {
+    return item.curso === 'Backend'; 
+})
+
+console.log(existeAlgumAlunoDeBackend);
