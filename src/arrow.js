@@ -30,6 +30,7 @@ const carro = {
         this.velocidadeAtual += 10;
         console.log("carro acelerando");
     },
+    // frear retornará undefined
     frear: () => { // método frear
         console.log(this);
         this.velocidadeAtual -= 10;
