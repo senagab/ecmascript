@@ -90,3 +90,12 @@ const soma = nums.reduce(function(acumulador, itemAtual){
 
 
 console.log(soma);
+
+// soma com for
+let somaComFor = 0;
+
+for (let i = 0; i < nums.length; i++) {
+    somaComFor += nums[i];
+}
+
+console.log(somaComFor);
