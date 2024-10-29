@@ -67,7 +67,14 @@ npm run build
 node .\dist\teste.js
 ```
 
+## <sup>Configurações Adicionais</sup>
 
+- Adicione a flag ```--watch``` do _@babel/cli_ para que a transpilação ocorra em tempo real livrando a redundante tarefa de rodar ```npm run build``` a cada alteração de código.
 
-
-
+```
+{
+   "scripts": {
+      "build": "babel src --watch -d dist"
+    }
+}
+```
