@@ -1,5 +1,12 @@
 # ES6
 
+<p align=right>
+  <a href="https://github.com/senagab/es6">
+    <img src="https://img.shields.io/badge/javascript-es6-8A2BE2?logo=github" Alt="EcmaScript 6">
+    </img> 
+  </a>
+</p>
+
 ## Instalação Babel 
 
 ```npm install --save-dev @babel/core @babel/cli```
