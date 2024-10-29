@@ -13,11 +13,6 @@ const alunos = ['Gustavo', 'Júlia', 'Alice', 'Wagner'];
 
 // es6 map
 const turma = alunos.map(function (itemAtual) {
-    // itemAtual = {
-    //     nome: itemAtual,
-    //     curso: 'Frontend'
-    // }
-    // return itemAtual;
     return {
         nome: itemAtual,
         curso: 'Frontend'
@@ -26,11 +21,14 @@ const turma = alunos.map(function (itemAtual) {
 
 console.log(turma);
 
-const numeros = [1, 2, 3, 4, 5]
-const dobroDosNumeros = numeros.map(function(numeroAtual) {
-    // numeroAtual = numeroAtual * 2;
-    // return numeroAtual;
-    return numeroAtual * 2;
+const alice = turma.find(function(item) {
+    return item.nome == 'Alice'; // resultado booleano: se encontra retorna o item, se não, retorna nada (undefined)
 })
 
-console.log(dobroDosNumeros);
+console.log(alice);
+
+const indiceDaJulia = turma.findIndex(function(item) {
+    return item.nome == 'Júlio'; // resultado booleano: se encontra retorna a posição no array, se não, retorna -1
+})
+
+console.log(indiceDaJulia);
