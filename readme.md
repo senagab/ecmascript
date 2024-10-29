@@ -3,7 +3,7 @@
 <p align=center>
     <img src="https://img.shields.io/badge/javascript-es6-8A2BE2" alt="ES6">
     </img> 
-    <img src="https://img.shields.io/badge/npm-v%2010.8.1-F52E42" alt="NPM">
+    <img src="https://img.shields.io/badge/npm-v10.8.1-F52E42" alt="NPM">
     </img> 
     <img src="https://img.shields.io/badge/babel-7.26.0-orange?logo=babel" alt="Babel">
     </img> 
