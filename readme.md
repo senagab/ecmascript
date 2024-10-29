@@ -2,16 +2,15 @@
 
 <p align=right>
   <a href="https://github.com/senagab/es6">
-    <img src="https://img.shields.io/badge/javascript-es6-8A2BE2" Alt="EcmaScript 6">
+    <img src="https://img.shields.io/badge/javascript-es6-8A2BE2" alt="ES6">
     </img> 
   </a>
   <a href="https://github.com/senagab/es6">
-    <img src="https://img.shields.io/badge/npm-v%2010.8.1-F52E42" Alt="EcmaScript 6">
+    <img src="https://img.shields.io/badge/npm-v%2010.8.1-F52E42" alt="NPM">
     </img> 
   </a>
   <a href="https://github.com/senagab/es6">
-    <img src="https://img.shields.io/badge/babel-7.26.0-orange
-?logo=babel" Alt="EcmaScript 6">
+    <img src="https://img.shields.io/badge/babel-7.26.0-orange?logo=babel" alt="Babel">
     </img> 
   </a>
 </p>
