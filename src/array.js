@@ -11,7 +11,7 @@ redesSociais.forEach(function (nomeDaRedeSocial, indice){
 
 const alunos = ['Gustavo', 'Júlia', 'Alice', 'Wagner'];
 
-// map
+// map: fazer uma manipulação e ter um array como retorno
 const turma = alunos.map(function (itemAtual) {
     return {
         nome: itemAtual,
@@ -21,7 +21,7 @@ const turma = alunos.map(function (itemAtual) {
 
 console.log(turma);
 
-// find
+// find: encontrar um item dentro de um array
 const alice = turma.find(function(item) {
     return item.nome == 'Alice'; // resultado booleano: se encontra retorna o item, se não, retorna nada (undefined)
 })
@@ -29,7 +29,7 @@ const alice = turma.find(function(item) {
 console.log(alice);
 
 
-// find index
+// find index: retorna a posição de um item dentro de um array
 const indiceDaJulia = turma.findIndex(function(item) {
     return item.nome == 'Júlio'; // resultado booleano: se encontra retorna a posição no array, se não, retorna -1
 })
@@ -43,14 +43,14 @@ turma.push({
     curso: 'Backend'
 })
 
-// every
+// every: retorna todos os itens dentro do array caso a condição seja satisfeita
 const todosAlunosSaoDeFront = turma.every(function(item) {
     return item.curso === 'Frontend'; // booleano: vai retornar caso o valor do curso seja correspondido 
 })
 
 console.log(todosAlunosSaoDeFront);
 
-// some
+// some: retorna se apenas um item satisfer condição
 const existeAlgumAlunoDeBackend = turma.some(function(item) {
     return item.curso === 'Backend'; 
 })
@@ -64,11 +64,12 @@ const existeAlgumAlunoFullStack = turma.some(function(item) {
 
 console.log(existeAlgumAlunoFullStack);
 
+// passar função direto como callback
 function filtraAlunosDeBackend(aluno) {
     return aluno.curso === 'Backend';
 }
 
-// filter + função
+// filter + callback 
 const alunosDeBackend = turma.filter(filtraAlunosDeBackend);
 
 // filter
@@ -80,7 +81,7 @@ const alunosDeBackend = turma.filter(filtraAlunosDeBackend);
 console.log(alunosDeBackend);
 
 
-// reduce
+// reduce: agregação de valores
 const nums = [10, 20, 30, 10];
 
 const soma = nums.reduce(function(acumulador, itemAtual){
@@ -100,7 +101,7 @@ for (let i = 0; i < nums.length; i++) {
 
 console.log(somaComFor);
 
-// reduce com listagem de alunos
+// reduce: reduz um objeto/array em uma unica variavel
 const nomesDosAlunos = turma.reduce(function(acumulador, itemAtual){
     acumulador += `${itemAtual.nome} `;
     return acumulador;
