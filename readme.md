@@ -5,7 +5,7 @@
     </img> 
     <img src="https://img.shields.io/badge/npm-v10.8.1-F52E42" alt="NPM">
     </img> 
-    <img src="https://img.shields.io/badge/babel-7.26.0-orange?logo=babel" alt="Babel">
+    <img src="https://img.shields.io/badge/babel-v7.26.0-orange?logo=babel" alt="Babel">
     </img> 
 </p>
 
