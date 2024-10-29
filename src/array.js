@@ -56,3 +56,10 @@ const existeAlgumAlunoDeBackend = turma.some(function(item) {
 })
 
 console.log(existeAlgumAlunoDeBackend);
+
+// some com condição composta
+const existeAlgumAlunoFullStack = turma.some(function(item) {
+    return item.curso === 'Backend' && item.curso === 'Frontend'; 
+})
+
+console.log(existeAlgumAlunoFullStack);
