@@ -12,7 +12,9 @@
     "build": "babel src -d dist"
   },
 ```
-> Lembrar de criar uma ./src para a ```build``` funcionar
+<sub>
+> Lembrar de criar uma ./src para a ```build``` funcionar.
+</sub>
 
 ## Instalação Preset 
 
