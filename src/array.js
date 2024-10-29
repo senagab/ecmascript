@@ -45,7 +45,7 @@ turma.push({
 
 // every
 const todosAlunosSaoDeFront = turma.every(function(item) {
-    return item.curso === 'Frontend'; // vai retornar caso o valor do curso seja correspondido 
+    return item.curso === 'Frontend'; // booleano: vai retornar caso o valor do curso seja correspondido 
 })
 
 console.log(todosAlunosSaoDeFront);
@@ -63,3 +63,10 @@ const existeAlgumAlunoFullStack = turma.some(function(item) {
 })
 
 console.log(existeAlgumAlunoFullStack);
+
+// filter
+const alunosDeBackend = turma.filter(function(item) {
+    return item.curso === 'Backend'; // filtra e retorna apenas entradas onde o valor é verdadeiro
+})
+
+console.log(alunosDeBackend);
