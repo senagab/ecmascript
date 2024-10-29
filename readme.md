@@ -24,7 +24,7 @@ npm install --save-dev @babel/core @babel/cli
   },
 ```
 
-Lembrar de criar uma ```./src``` para a ```npm run build``` funcionar.
+- Crie uma ```./src``` para a ```npm run build``` funcionar.
 
 ## <sup>Preset Instalação</sup>
 
@@ -43,7 +43,7 @@ Dentro de _babel.config.js_:
     "presets": ["@babel/preset-env"]
 }
 ```
-Adicionar configuração de ```browserslist``` antes de ```dependencies``` em __package.json__.
+- Adicionar configuração de ```browserslist``` antes de ```dependencies``` em __package.json__.
 
 ```
   "browserslist": "> 0.25%",
@@ -69,7 +69,7 @@ node .\dist\teste.js
 
 ## <sup>Configurações Adicionais</sup>
 
-- Adicione a flag ```--watch``` do _@babel/cli_ para que a transpilação ocorra em tempo real livrando a redundante tarefa de rodar ```npm run build``` a cada alteração de código.
+- Adicione a flag ```--watch``` do _@babel/cli_ para que a transpilação ocorra em tempo real, livrando a redundancia de rodar o _babel_  com ```npm run build``` a cada alteração de código.
 
 ```
 {
