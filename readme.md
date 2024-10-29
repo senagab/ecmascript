@@ -12,9 +12,8 @@
     "build": "babel src -d dist"
   },
 ```
-<sub>
-> Lembrar de criar uma ./src para a ```build``` funcionar.
-</sub>
+
+Lembrar de criar uma ```./src``` para a ```npm run build``` funcionar.
 
 ## Instalação Preset 
 
@@ -31,7 +30,7 @@ Dentro de _babel.config.js_:
     "presets": ["@babel/preset-env"]
 }
 ```
-__package.json__: adicionar configuração de ```browserslist``` antes de ```dependencies```.
+Adicionar configuração de ```browserslist``` antes de ```dependencies``` em __package.json__.
 
 ```
   "browserslist": "> 0.25%",
@@ -44,7 +43,7 @@ __package.json__: adicionar configuração de ```browserslist``` antes de ```dep
 
 ## Testing
 
-<sup>crie um arquivo js em src<sup>
+<sup>crie um arquivo js em ./src<sup>
 
 
 ```npm run build```
