@@ -1,8 +1,17 @@
-# ES6
+<h1 align="center">ES6 + Babel</h1>
 
 <p align=right>
   <a href="https://github.com/senagab/es6">
-    <img src="https://img.shields.io/badge/javascript-es6-8A2BE2?logo=github" Alt="EcmaScript 6">
+    <img src="https://img.shields.io/badge/javascript-es6-8A2BE2" Alt="EcmaScript 6">
+    </img> 
+  </a>
+  <a href="https://github.com/senagab/es6">
+    <img src="https://img.shields.io/badge/npm-v%2010.8.1-F52E42" Alt="EcmaScript 6">
+    </img> 
+  </a>
+  <a href="https://github.com/senagab/es6">
+    <img src="https://img.shields.io/badge/babel-7.26.0-orange
+?logo=babel" Alt="EcmaScript 6">
     </img> 
   </a>
 </p>
