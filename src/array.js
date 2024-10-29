@@ -99,3 +99,11 @@ for (let i = 0; i < nums.length; i++) {
 }
 
 console.log(somaComFor);
+
+// reduce com listagem de alunos
+const nomesDosAlunos = turma.reduce(function(acumulador, itemAtual){
+    acumulador += `${itemAtual.nome} `;
+    return acumulador;
+}, '')
+
+console.log(nomesDosAlunos);
