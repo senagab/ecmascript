@@ -56,7 +56,7 @@ Adicionar configuração de ```browserslist``` antes de ```dependencies``` em __
 
 ## <sup>Build</sup>
 
-<sup>crie um arquivo js em ```./src``` e adicione ```console.log("teste")``` para validação.<sup>
+<sup>crie um arquivo ```teste.js``` em ```./src``` e adicione ```console.log("teste")``` para validação.<sup>
 
 
 ```
