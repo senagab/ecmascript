@@ -43,7 +43,7 @@ Adicionar configuração de ```browserslist``` antes de ```dependencies``` em __
 
 ## Testing
 
-<sup>crie um arquivo js em ./src<sup>
+<sup>crie um arquivo js em ./src e adicione um console.log() para validar.<sup>
 
 
 ```npm run build```
