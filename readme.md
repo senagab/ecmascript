@@ -47,9 +47,6 @@ Adicionar configuração de ```browserslist``` antes de ```dependencies``` em __
 
 
 ```npm run build```
-
-e
-
 ```node .\dist\teste.js```
 
 
