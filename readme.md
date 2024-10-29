@@ -2,30 +2,34 @@
 
 ## Configuração
 
-terminal: 
+Instalação Babel 
+
 ```npm install --save-dev @babel/core @babel/cli```
 
-pkg.json:
+
+Setup Babel
 
 ```
   "scripts": {
     "build": "babel src -d dist"
   },
 ```
-lembrar de criar uma src para funcionar
+> Lembrar de criar uma ./src para a ```build``` funcionar
 
-terminal: npm install --save-dev @babel/preset-env
+Instalação Preset 
 
-raiz > novo arquivo "babel.config.js"
+```npm install --save-dev @babel/preset-env```
 
-dentro de babel.config.js:
+Criar novo arquivo _babel.config.js_ na raiz.
+
+Dentro de _babel.config.js_:
 
 ```
 {
     "presets": ["@babel/preset-env"]
 }
 ```
-pkg.json: adicionar configuração de browserslist antes de dependencies
+__package.json__: adicionar configuração de ```browserslist``` antes de ```dependencies```.
 
 ```
   "browserslist": "> 0.25%",
@@ -36,11 +40,10 @@ pkg.json: adicionar configuração de browserslist antes de dependencies
   }
 ```
 
-para testar:
+Testing
 
-crie um arquivo js em src
+<sup>crie um arquivo js em src<sup>
 
-terminal:
 
 ```npm run build```
 
