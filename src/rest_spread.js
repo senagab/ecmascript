@@ -1,3 +1,4 @@
+// arguments
 function somar() {
 
     let soma = 0;
@@ -13,3 +14,14 @@ function somar() {
 }
 
 console.log(somar(10, 2, 3));
+
+// rest
+function somarComRest(...numeros) { // reticencias torna em operador rest
+    const soma = numeros.reduce((total, numeroAtual) => {
+        total += numeroAtual;
+        return total;
+    }, 0)
+    return soma;
+}
+
+console.log(somarComRest(10, 2, 3));
