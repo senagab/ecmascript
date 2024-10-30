@@ -40,3 +40,18 @@ const timesDeFutebolRio = ['vasco', 'flamengo', 'botafogo', 'fluminense'];
 const timesDeFutebol = [...timesDeFutebolSaoPaulo, ...timesDeFutebolRio];
 
 console.log(timesDeFutebol);
+
+// operador spread em objetos
+const carroDaJulia = {
+    modelo: 'gol',
+    marca: 'volkswagen',
+    motor: 1.6
+}
+
+// puxa todas as propriedades do carroDaJulia alterando apenas a propriedade especificada
+const carroDaCecilia = {
+    ...carroDaJulia,
+    motor: 1.8
+}
+
+console.log(carroDaCecilia);
