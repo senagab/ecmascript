@@ -55,3 +55,10 @@ const carroDaCecilia = {
 }
 
 console.log(carroDaCecilia);
+
+// desestruturação
+// const motorDoCarroDaJulia = carroDaJulia.motor;
+const { motor: motorDoCarroDaJulia } = carroDaJulia;
+const { motor : motorDoCarroDaCecilia } = carroDaCecilia;
+
+console.log(motorDoCarroDaCecilia, " - ", motorDoCarroDaJulia)
