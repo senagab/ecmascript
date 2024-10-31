@@ -63,3 +63,14 @@ console.log(cpfs.values());
 cpfs.forEach((valor) => {
     console.log(valor);
 })
+
+// array com duplicatas
+const array = ['gian souza', 'jose paulo', 'maria isabel', 'luana', 'luana', 'gian souza'];
+
+// remoção de duplicatas transformando array em set
+const arrayComoSet = new Set([...array]);
+console.log(arrayComoSet);
+
+// reverter set em array após remoção de duplicatas
+const arraySemDuplicatas = [...arrayComoSet];
+console.log(arraySemDuplicatas);
