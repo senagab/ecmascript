@@ -62,3 +62,12 @@ const { motor: motorDoCarroDaJulia } = carroDaJulia;
 const { motor : motorDoCarroDaCecilia } = carroDaCecilia;
 
 console.log(motorDoCarroDaCecilia, " - ", motorDoCarroDaJulia)
+
+
+// desestruturação em array + variavel rest
+const [item1, item2, item3, ...outrosTimes] = timesDeFutebol;
+
+console.log(item1);
+console.log(item2);
+console.log(item3);
+console.log(outrosTimes);
