@@ -59,3 +59,7 @@ cpfs.add('56281304004');
 console.log(cpfs);
 console.log(cpfs.keys());
 console.log(cpfs.values());
+
+cpfs.forEach((valor) => {
+    console.log(valor);
+})
