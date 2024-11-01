@@ -7,6 +7,7 @@
 // const charmander = new Pokemon("Charmander", "Fogo") 
 
 class Pokemon {
+    #hp = 100; // campo privado
 
     constructor(nomeDoPokemon, tipoDoPokemon) {
         this.nome = nomeDoPokemon;
@@ -15,6 +16,14 @@ class Pokemon {
 
     atacar(nomeDoAtaque) { // metodo
         console.log(`${this.nome} atacou com ${nomeDoAtaque}!`)
+    }
+
+    recebeuAtaque() {
+        this.#hp -= 10;
+    }
+
+    exibeHP(){
+        console.log(this.#hp)
     }
 }
 
@@ -30,7 +39,14 @@ class Squirtle extends Pokemon {
 }
 
 const squirtleDoAsh = new Squirtle()
+
+squirtleDoAsh.recebeuAtaque()
+squirtleDoAsh.hp = 9000;
+
+console.log(squirtleDoAsh.hp)
+
 squirtleDoAsh.atacar()
+squirtleDoAsh.exibeHP()
 const squirtle = new Pokemon('Squirtle', 'Água');
 // squirtle.atacar('Aqua Tail')
 // squirtle.nome = 'Squirtle';
