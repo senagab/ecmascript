@@ -19,7 +19,16 @@ const funcaoMuitoPesadaPromise = new Promise((resolve, reject) => {
     }
 });
 
-console.log("inicio")
 // console.log(funcaoMuitoPesada())
-funcaoMuitoPesadaPromise.then(resultado => console.log(resultado)).catch(erro => console.log(erro))
-console.log("fim")
+
+async function execucaoPrincipal() {
+    console.log("inicio")
+
+    // await funcaoMuitoPesadaPromise.then(resultado => console.log(resultado)).catch(erro => console.log(erro))
+    const resultado = await funcaoMuitoPesadaPromise;
+
+    console.log(resultado)
+    console.log("fim")
+}
+
+execucaoPrincipal()
