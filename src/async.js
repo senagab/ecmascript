@@ -14,7 +14,7 @@ const funcaoMuitoPesadaPromise = new Promise((resolve, reject) => {
         }
         resolve(execucoes);
     }
-    catch(e) {
+    catch(e) { // 'e' for error
         reject("deu erro aqui chupeta")
     }
 });
@@ -25,9 +25,15 @@ async function execucaoPrincipal() {
     console.log("inicio")
 
     // await funcaoMuitoPesadaPromise.then(resultado => console.log(resultado)).catch(erro => console.log(erro))
-    const resultado = await funcaoMuitoPesadaPromise;
 
-    console.log(resultado)
+
+    try {
+        const resultado = await funcaoMuitoPesadaPromise;
+        console.log(resultado)
+    } catch(e) {
+        console.log(e)
+    }
+
     console.log("fim")
 }
 
