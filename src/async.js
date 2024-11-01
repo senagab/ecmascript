@@ -19,13 +19,23 @@ const funcaoMuitoPesadaPromise = new Promise((resolve, reject) => {
     }
 });
 
+const promiseComParametros = (login, senha) => {
+    return new Promise((resolve, reject) => {
+        setTimeout(() => {
+            resolve(`Logado com o usuário: ${login}`)
+        }, 3000)
+    })
+}
+
 // console.log(funcaoMuitoPesada())
 
 async function execucaoPrincipal() {
     console.log("inicio")
 
     // await funcaoMuitoPesadaPromise.then(resultado => console.log(resultado)).catch(erro => console.log(erro))
-
+    promiseComParametros('gabriel@gmail.com', 123456).then(resultado => {
+        console.log(resultado);
+    })
 
     try {
         const resultado = await funcaoMuitoPesadaPromise;
