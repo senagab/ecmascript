@@ -18,9 +18,27 @@ class Pokemon {
     }
 }
 
+// a classe pikachu herda de pokemon
+class Squirtle extends Pokemon {
+    constructor(){
+        super('Squirtle', 'Água')
+    }
+
+    atacar() { // metodo
+        console.log(`${this.nome} atacou com Aqua Tail!`)
+    }
+}
+
+const squirtleDoAsh = new Squirtle()
+squirtleDoAsh.atacar()
 const squirtle = new Pokemon('Squirtle', 'Água');
-squirtle.atacar('Aqua Tail')
+// squirtle.atacar('Aqua Tail')
 // squirtle.nome = 'Squirtle';
 // squirtle.tipo = 'Água';
 
 console.log(squirtle)
+console.log(squirtleDoAsh)
+
+// variavel é instancia de classe
+console.log(squirtleDoAsh instanceof Squirtle);
+console.log(squirtleDoAsh instanceof Pokemon);
